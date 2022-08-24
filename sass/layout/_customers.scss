@@ -17,17 +17,18 @@
    border: 1px solid #afb1b8;
    border-radius: 4px;
    transition: border var(--trans);
+   &:hover,
+   &:focus {
+   background-color: var(--accent-color);
+   border: 1px solid var(--header-color);
+}
 }
 .icon-сust {
    fill: #afb1b8;
    transition: fill var(--trans);
-}
-.cust-link:hover,
-.cust-link:focus {
-   background-color: var(--accent-color);
-   border: 1px solid var(--header-color);
-}
-.cust-link:hover .icon-сust,
-.cust-link:focus .icon-сust {
+   .cust-link:hover &,
+   .cust-link:focus & {
    fill: var(--header-color);
 }
+}
+

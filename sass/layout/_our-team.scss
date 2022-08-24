@@ -46,16 +46,16 @@
    height: 100%;
    border-radius: 50%;
    transition: background-color var(--trans);
+   &:hover,
+   &:focus {
+   background-color: var(--header-color);
+}
 }
 .otem-soc-icon {
    fill: #afb1b8;
    transition: fill var(--trans);
-}
-.otem-soc-link:hover,
-.otem-soc-link:focus {
-   background-color: var(--header-color);
-}
-.otem-soc-link:hover .otem-soc-icon,
-.otem-soc-link:focus .otem-soc-icon {
+   .otem-soc-link:hover &,
+   .otem-soc-link:focus & {
    fill: var(--accent-color);
+}
 }

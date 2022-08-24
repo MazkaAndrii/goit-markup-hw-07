@@ -43,8 +43,8 @@
    margin: 0 auto;
    border: none;
    transition: background-color var(--trans), color var(--trans);
-}
-.hero-bt:hover,
-.hero-bt:focus {
+   &:hover,
+   &:focus {
    background-color: #188ce8;
+}
 }

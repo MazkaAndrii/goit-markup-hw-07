@@ -28,8 +28,7 @@
 }
 .current {
    position: relative;
-}
-.current::after {
+   &::after {
    content: '';
    display: flex;
    width: 100%;
@@ -40,6 +39,8 @@
    left: 0;
    top: 47px;
 }
+}
+
 .nav-list-item {
    padding-left: 2px;
    padding-right: 2px;
@@ -56,47 +57,50 @@
 }
 .nav-list-item {
    color: var(--text-color);
-}
-.nav-list-item:hover,
-.nav-list-item:focus {
+   &:hover,
+   &:focus {
    color: var(--header-color);
 }
-.header-tel,
-.mail {
+}
+.header-tel {
    display: flex;
    align-items: center;
    color: var(--basetext-color);
    transition: color var(--trans);
-}
-.header-tel:hover,
-.header-tel:focus {
+   &:hover,
+   &:focus {
    color: var(--header-color);
 }
-.header-tel:hover .contacts-icon,
-.header-tel:focus .contacts-icon {
-   fill: currentColor;
-}
-.mail:hover,
-.mail:focus {
-   color: var(--header-color);
 }
 .contacts {
    margin-left: auto;
    column-gap: 50px;
 }
 .mail {
+   display: flex;
+   align-items: center;
+   color: var(--basetext-color);
+   transition: color var(--trans);
    margin: 9px auto;
+   &:hover,
+   &:focus {
+   color: var(--header-color);
+}
 }
 .contacts-icon {
    margin-right: 10px;
    fill: var(--basetext-color);
    transition: fill var(--trans);
-}
-.contacts-icon:hover,
-.contacts-icon:focus {
+   &:hover,
+   &:focus {
    fill: currentColor;
 }
-.mail:hover .contacts-icon,
-.mail:focus .contacts-icon {
+.mail:hover &,
+.mail:focus & {
    fill: currentColor;
+}
+.header-tel:hover &,
+.header-tel:focus & {
+   fill: currentColor;
+}
 }
