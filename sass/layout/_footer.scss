@@ -1,0 +1,128 @@
+.basement {
+   padding-top: 60px;
+   padding-bottom: 60px;
+   background-color: #2f303a;
+}
+.ft {
+   display: block;
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: var(--font-weight);
+   font-size: 26px;
+   line-height: 1.2;
+   color: var(--header-color);
+   text-decoration: none;
+   letter-spacing: 0.02em;
+   margin-bottom: 20px;
+}
+.logo-footer {
+   color: var(--accent-color);
+   padding-top: 60px;
+}
+.basement-adr {
+   display: block;
+   font-style: normal;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: var(--accent-color);
+   text-align: left;
+}
+.footer-contacts {
+   box-sizing: border-box;
+   width: 227px;
+   margin-right: 70px;
+}
+.contacts-ft {
+   list-style: none;
+}
+.footer {
+   display: flex;
+   align-items: baseline;
+}
+.ft-header {
+   margin-bottom: 20px;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--accent-color);
+}
+.ft-soc {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+.ft-soc-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.1);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   transition: background-color var(--trans);
+}
+.otem-soc-icon-ft {
+   fill: #ffffff;
+}
+.ft-soc-link:hover,
+.ft-soc-link:focus {
+   background-color: var(--header-color);
+}
+.ft-form-header {
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--accent-color);
+   padding-bottom: 20px;
+}
+.ft-form {
+   display: block;
+   margin-left: 93px;
+   margin-right: 0;
+}
+.ft-form-input {
+   width: 358px;
+   height: 50px;
+   margin-right: 12px;
+   padding: 15px 16px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   background: #2f303a;
+   color: rgba(255, 255, 255, 0.6);
+   transition: var(--trans);
+}
+.ft-form input::placeholder {
+   font-size: 16px;
+   line-height: 1.25;
+   letter-spacing: 0.03em;
+   color: rgba(255, 255, 255, 0.6);
+}
+.ft-form-button {
+   position: relative;
+   padding: 10px 29px;
+   text-align: left;
+   width: 200px;
+   height: 50px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   letter-spacing: 0.06em;
+   color: var(--accent-color);
+   background-color: var(--header-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   border: 0;
+   cursor: pointer;
+}
+.ft-form-bticon {
+   position: absolute;
+   top: 13px;
+   right: 29px;
+   fill: var(--accent-color);
+}

@@ -1,0 +1,61 @@
+.our-team {
+   background-color: #f5f4fa;
+}
+.oteam-items {
+   background-color: var(--accent-color);
+   border-radius: 0px 0px 4px 4px;
+   width: calc((100% - 30px) / 3);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.oteem-header {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: var(--text-color);
+   margin: 0px 0px 10px;
+}
+.oteem-position {
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: var(--basetext-color);
+   margin-bottom: 16px;
+}
+.oteam-text {
+   padding: 30px 0px;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.otem-soc {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+.otem-soc-item {
+   width: 44px;
+   height: 44px;
+}
+.otem-soc-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   transition: background-color var(--trans);
+}
+.otem-soc-icon {
+   fill: #afb1b8;
+   transition: fill var(--trans);
+}
+.otem-soc-link:hover,
+.otem-soc-link:focus {
+   background-color: var(--header-color);
+}
+.otem-soc-link:hover .otem-soc-icon,
+.otem-soc-link:focus .otem-soc-icon {
+   fill: var(--accent-color);
+}

@@ -1,0 +1,40 @@
+.about {
+   padding: 0px 0px 94px 0px;
+}
+.about-header {
+   font-weight: var(--font-weight);
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: var(--text-color);
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+.about-list-comp {
+   position: relative;
+}
+.about-list-phone {
+   position: relative;
+}
+.about-list-tab {
+   position: relative;
+}
+.about-list-text {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 370px;
+   height: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(47, 48, 58, 0.8);
+   font-weight: var(--font-weight);
+   font-size: 14px;
+   line-height: 1.14;
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--accent-color);
+}
