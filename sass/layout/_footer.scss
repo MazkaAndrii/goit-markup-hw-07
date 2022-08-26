@@ -3,24 +3,16 @@
    padding-bottom: 60px;
    background-color: #2f303a;
 }
-.ft {
+
+.logo__footer {
    display: block;
-   font-family: Raleway;
-   font-style: normal;
-   font-weight: var(--font-weight);
-   font-size: 26px;
-   line-height: 1.2;
-   color: var(--header-color);
-   text-decoration: none;
-   letter-spacing: 0.02em;
    margin-bottom: 20px;
-}
-.logo-footer {
+   }
+.logo__part-light {
    color: var(--accent-color);
    padding-top: 60px;
-}
+}   
 .basement-adr {
-   display: block;
    font-style: normal;
    font-size: 14px;
    line-height: 1.71;
@@ -29,9 +21,11 @@
    text-align: left;
 }
 .footer-contacts {
+   display: block;
    box-sizing: border-box;
    width: 227px;
    margin-right: 70px;
+   
 }
 .contacts-ft {
    list-style: none;

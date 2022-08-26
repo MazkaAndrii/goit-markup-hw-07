@@ -22,6 +22,9 @@
    transform: translate(-50%, -50%) scale(1);
    transition: transform var(--trans);
    padding: 40px;
+   .backdrop.is-hidden & {
+   transform: translate(-50%, -50%) scale(0);
+}
 }
 .bt-modal {
    position: absolute;
@@ -41,9 +44,6 @@
    fill: var(--header-color);
    cursor: pointer;
 }
-}
-.backdrop.is-hidden .modal {
-   transform: translate(-50%, -50%) scale(0);
 }
 .modal-title {
    font-weight: var(--font-weight);

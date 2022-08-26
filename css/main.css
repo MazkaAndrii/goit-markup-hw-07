@@ -74,38 +74,55 @@ body {
   margin: 0 auto;
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
 .header {
   border-bottom: 1px solid #ececec;
   padding: 24px 0 25px;
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
 .logo {
   font-family: Raleway;
-  font-style: normal;
   font-weight: var(--font-weight);
   font-size: 26px;
   line-height: 1.2;
   color: var(--header-color);
   text-decoration: none;
   letter-spacing: 0.02em;
-  margin-right: 93px;
 }
 
-.logo-header {
+.logo__part-dark {
   color: #000000;
 }
 
-.nav-list {
+.navigation {
   -moz-column-gap: 50px;
        column-gap: 50px;
 }
 
-.nav-list-item.current {
+.navigation__link {
+  padding-left: 2px;
+  padding-right: 2px;
+  transition: color var(--trans);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.navigation__link:hover, .navigation__link:focus {
+  color: var(--header-color);
+}
+
+.navigation__link.current {
   color: var(--header-color);
 }
 
@@ -124,39 +141,6 @@ body {
   top: 47px;
 }
 
-.nav-list-item {
-  padding-left: 2px;
-  padding-right: 2px;
-  transition: color var(--trans);
-}
-
-.nav-list-item,
-.header-tel,
-.mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--basetext-color);
-}
-
-.nav-list-item {
-  color: var(--text-color);
-}
-.nav-list-item:hover, .nav-list-item:focus {
-  color: var(--header-color);
-}
-
-.header-tel {
-  display: flex;
-  align-items: center;
-  color: var(--basetext-color);
-  transition: color var(--trans);
-}
-.header-tel:hover, .header-tel:focus {
-  color: var(--header-color);
-}
-
 .contacts {
   margin-left: auto;
   -moz-column-gap: 50px;
@@ -166,27 +150,72 @@ body {
 .mail {
   display: flex;
   align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--basetext-color);
   transition: color var(--trans);
-  margin: 9px auto;
 }
 .mail:hover, .mail:focus {
   color: var(--header-color);
 }
 
-.contacts-icon {
+.mail__icon {
   margin-right: 10px;
   fill: var(--basetext-color);
   transition: fill var(--trans);
 }
-.contacts-icon:hover, .contacts-icon:focus {
+.mail__icon:hover, .mail__icon:focus {
   fill: currentColor;
 }
-.mail:hover .contacts-icon, .mail:focus .contacts-icon {
+.mail:hover .mail__icon, .mail:focus .mail__icon {
   fill: currentColor;
 }
-.header-tel:hover .contacts-icon, .header-tel:focus .contacts-icon {
+
+.tel {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--basetext-color);
+  transition: color var(--trans);
+}
+.tel:hover, .tel:focus {
+  color: var(--header-color);
+}
+
+.tel__icon {
+  margin-right: 10px;
+  fill: var(--basetext-color);
+  transition: fill var(--trans);
+}
+.tel__icon:hover, .tel__icon:focus {
   fill: currentColor;
+}
+.tel:hover .tel__icon, .tel:focus .tel__icon {
+  fill: currentColor;
+}
+
+.mail-ft {
+  margin: 9px auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tel-ft {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .hero {
@@ -429,26 +458,17 @@ body {
   background-color: #2f303a;
 }
 
-.ft {
+.logo__footer {
   display: block;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: var(--font-weight);
-  font-size: 26px;
-  line-height: 1.2;
-  color: var(--header-color);
-  text-decoration: none;
-  letter-spacing: 0.02em;
   margin-bottom: 20px;
 }
 
-.logo-footer {
+.logo__part-light {
   color: var(--accent-color);
   padding-top: 60px;
 }
 
 .basement-adr {
-  display: block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -458,6 +478,7 @@ body {
 }
 
 .footer-contacts {
+  display: block;
   box-sizing: border-box;
   width: 227px;
   margin-right: 70px;
@@ -695,6 +716,9 @@ body {
   transition: transform var(--trans);
   padding: 40px;
 }
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
 
 .bt-modal {
   position: absolute;
@@ -713,10 +737,6 @@ body {
 .bt-modal:hover, .bt-modal:focus {
   fill: var(--header-color);
   cursor: pointer;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal-title {
