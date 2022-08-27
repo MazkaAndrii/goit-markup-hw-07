@@ -1,26 +1,10 @@
 .about {
    padding: 0px 0px 94px 0px;
 }
-.about-header {
-   font-weight: var(--font-weight);
-   font-size: 36px;
-   line-height: 1.17;
-   text-align: center;
-   letter-spacing: 0.03em;
-   color: var(--text-color);
-   margin: 0 auto;
-   margin-bottom: 50px;
-}
-.about-list-comp {
+.about__icon {
    position: relative;
 }
-.about-list-phone {
-   position: relative;
-}
-.about-list-tab {
-   position: relative;
-}
-.about-list-text {
+.about__text {
    position: absolute;
    left: 0;
    bottom: 0;

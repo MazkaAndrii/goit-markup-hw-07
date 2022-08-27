@@ -74,6 +74,17 @@ body {
   margin: 0 auto;
 }
 
+.section__header {
+  font-weight: var(--font-weight);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
   padding: 24px 0 25px;
@@ -231,12 +242,17 @@ body {
   background-color: #188ce8;
 }
 
-.benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.benefits__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
 }
 
-.bts-header {
+.benefits__header {
   font-weight: var(--font-weight);
   font-size: 14px;
   line-height: 1.14;
@@ -247,7 +263,7 @@ body {
   margin-bottom: 10px;
 }
 
-.bts-text {
+.benefits__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -256,44 +272,15 @@ body {
   max-width: 270px;
 }
 
-.benefits-item-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-}
-
 .about {
   padding: 0px 0px 94px 0px;
 }
 
-.about-header {
-  font-weight: var(--font-weight);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
-.about-list-comp {
+.about__icon {
   position: relative;
 }
 
-.about-list-phone {
-  position: relative;
-}
-
-.about-list-tab {
-  position: relative;
-}
-
-.about-list-text {
+.about__text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -312,11 +299,11 @@ body {
   color: var(--accent-color);
 }
 
-.our-team {
+.ourteam {
   background-color: #f5f4fa;
 }
 
-.oteam-items {
+.ourteam__items {
   background-color: var(--accent-color);
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 30px) / 3);
@@ -377,17 +364,6 @@ body {
 }
 .otem-soc-link:hover .otem-soc-icon, .otem-soc-link:focus .otem-soc-icon {
   fill: var(--accent-color);
-}
-
-.customers-header {
-  font-weight: var(--font-weight);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-  margin: 0 auto;
-  margin-bottom: 50px;
 }
 
 .cust-link {
