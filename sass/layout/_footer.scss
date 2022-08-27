@@ -1,18 +1,27 @@
-.basement {
+.footer {
    padding-top: 60px;
    padding-bottom: 60px;
    background-color: #2f303a;
 }
-
-.logo__footer {
+.footer__container {
+   display: flex;
+   align-items: baseline;
+}
+.footer__contacts {
+   display: block;
+   box-sizing: border-box;
+   width: 227px;
+   margin-right: 70px;
+}
+.logo-footer {
    display: block;
    margin-bottom: 20px;
    }
-.logo__part-light {
+.logo__light {
    color: var(--accent-color);
    padding-top: 60px;
 }   
-.basement-adr {
+.footer__adress {
    font-style: normal;
    font-size: 14px;
    line-height: 1.71;
@@ -20,20 +29,26 @@
    color: var(--accent-color);
    text-align: left;
 }
-.footer-contacts {
-   display: block;
-   box-sizing: border-box;
-   width: 227px;
-   margin-right: 70px;
-   
-}
-.contacts-ft {
+.footer__contacts {
    list-style: none;
 }
-.footer {
-   display: flex;
-   align-items: baseline;
-}
+.contacts__mail-ft {   
+   margin: 9px auto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: rgba(255, 255, 255, 0.6);
+ }
+ .contacts__tel-ft {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: rgba(255, 255, 255, 0.6);
+ }
 .ft-header {
    margin-bottom: 20px;
    font-size: 14px;
