@@ -7,7 +7,7 @@
    width: calc((100% - 30px) / 3);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.oteem-header {
+.ourteam__header {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.19;
@@ -16,7 +16,7 @@
    color: var(--text-color);
    margin: 0px 0px 10px;
 }
-.oteem-position {
+.ourteam__position {
    font-size: 16px;
    line-height: 1.19;
    text-align: center;
@@ -24,38 +24,8 @@
    color: var(--basetext-color);
    margin-bottom: 16px;
 }
-.oteam-text {
+.ourteam__text {
    padding: 30px 0px;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.sociallinks {
-   display: flex;
-   justify-content: center;
-   gap: 10px;
-}
-.sociallinks__item {
-   width: 44px;
-   height: 44px;
-}
-.otem-soc-link {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 100%;
-   height: 100%;
-   border-radius: 50%;
-   transition: background-color var(--trans);
-   &:hover,
-   &:focus {
-   background-color: var(--header-color);
-}
-}
-.otem-soc-icon {
-   fill: #afb1b8;
-   transition: fill var(--trans);
-   .otem-soc-link:hover &,
-   .otem-soc-link:focus & {
-   fill: var(--accent-color);
-}
 }
