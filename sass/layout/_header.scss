@@ -16,7 +16,7 @@
    text-decoration: none;
    letter-spacing: 0.02em;
    }
-.logo-header {
+.logo--header {
    margin-right: 93px;}
 .logo__dark {
    color: #000000;
@@ -39,10 +39,10 @@
    color: var(--header-color);
 }
 }
-.navigation__link.current {
+.navigation__link.navigation__link--current {
    color: var(--header-color);
 }
-.current {
+.navigation__link--current {
    position: relative;
    &::after {
    content: '';

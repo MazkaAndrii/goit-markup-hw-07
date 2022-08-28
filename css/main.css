@@ -105,7 +105,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.logo-header {
+.logo--header {
   margin-right: 93px;
 }
 
@@ -133,14 +133,14 @@ body {
   color: var(--header-color);
 }
 
-.navigation__link.current {
+.navigation__link.navigation__link--current {
   color: var(--header-color);
 }
 
-.current {
+.navigation__link--current {
   position: relative;
 }
-.current::after {
+.navigation__link--current::after {
   content: "";
   display: flex;
   width: 100%;
