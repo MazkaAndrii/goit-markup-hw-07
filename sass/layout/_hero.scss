@@ -45,6 +45,6 @@
    transition: background-color var(--trans), color var(--trans);
    &:hover,
    &:focus {
-   background-color: #188ce8;
-}
+      background-color: #188ce8;
+   }
 }

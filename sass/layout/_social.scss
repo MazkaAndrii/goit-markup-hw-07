@@ -17,14 +17,14 @@
    transition: background-color var(--trans);
    &:hover,
    &:focus {
-   background-color: var(--header-color);
-}
+      background-color: var(--header-color);
+   }
 }
 .sociallinks__icon {
    fill: #afb1b8;
    transition: fill var(--trans);
    .sociallinks__link:hover &,
    .sociallinks__link:focus & {
-   fill: var(--accent-color);
-}
+      fill: var(--accent-color);
+   }
 }

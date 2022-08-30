@@ -21,24 +21,24 @@
    transition: background-color var(--trans), color var(--trans), box-shadow var(--trans);
    &:hover,
    &:focus {
-   background: var(--header-color);
-   color: var(--accent-color);
-   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+      background: var(--header-color);
+      color: var(--accent-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+         0px 2px 2px rgba(0, 0, 0, 0.12);
+   }
 }
 .oserv-list {
    flex-wrap: wrap;
 }
-.oserv-item {
+.oserv__link {
    display: block;
    width: 370px;
    transition: box-shadow var(--trans);
    &:hover,
    &:focus {
-   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+         1px 4px 6px rgba(0, 0, 0, 0.16);
+   }
 }
 .oserv-over {
    position: relative;
@@ -60,10 +60,11 @@
    background: rgba(33, 150, 243, 0.9);
    transform: translateY(100%);
    transition: transform var(--trans);
-   .oserv-item:hover & {
-   transform: translateY(0);
-   transition: transform var(--trans);
-}
+   .oserv__link:hover &,
+   .oserv__link:focus & {
+      transform: translateY(0);
+      transition: transform var(--trans);
+   }
 }
 .oserv-item-head {
    font-weight: var(--font-weight);

@@ -16,11 +16,11 @@
 .logo-footer {
    display: block;
    margin-bottom: 20px;
-   }
+}
 .logo__light {
    color: var(--accent-color);
    padding-top: 60px;
-}   
+}
 .footer__adress {
    font-style: normal;
    font-size: 14px;
@@ -32,7 +32,7 @@
 .footer__contacts {
    list-style: none;
 }
-.contacts__mail-ft {   
+.contacts__mail-ft {
    margin: 9px auto;
    font-style: normal;
    font-weight: 400;
@@ -40,15 +40,15 @@
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: rgba(255, 255, 255, 0.6);
- }
- .contacts__tel-ft {
+}
+.contacts__tel-ft {
    font-style: normal;
    font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: rgba(255, 255, 255, 0.6);
- }
+}
 .ft-header {
    margin-bottom: 20px;
    font-size: 14px;
@@ -60,7 +60,7 @@
 .sociallinks__link-footer {
    background-color: rgba(255, 255, 255, 0.1);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   }
+}
 .sociallinks__icon-footer {
    fill: #ffffff;
 }
@@ -89,11 +89,11 @@
    color: rgba(255, 255, 255, 0.6);
    transition: var(--trans);
    &::placeholder {
-   font-size: 16px;
-   line-height: 1.25;
-   letter-spacing: 0.03em;
-   color: rgba(255, 255, 255, 0.6);
-}
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+   }
 }
 .ft-form-button {
    position: relative;

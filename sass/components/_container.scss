@@ -4,3 +4,9 @@
    padding-right: 15px;
    margin: 0 auto;
 }
+.section {
+   padding: 94px 0px;
+}
+.section__title {
+   @extend %sectiontitle;
+}
